@@ -18,7 +18,7 @@
   ]
 2 - Organizar arquivos após configuração eslint/prettier;
 obs: (src e o dir do projeto)
-yarn eslint --fix src --ext .js
+❯ yarn eslint --fix src --ext .js
 
 3 - install extenions 'EditorConfig';
 root = true
@@ -32,4 +32,13 @@ insert_final_newline = true
 
 4 - utilisando sequelize-cli para gerar migrate;
 //tabala 'users'
-yarn sequelize migration:create --name=create-users
+❯ yarn sequelize migration:create --name=create-users
+
+//Criando a tabela users
+❯ yarn sequelize db:migrate
+
+// desfazer uma migratons
+❯ yarn sequelize db:migrate:undo
+
+// desfazer todas as migrations
+❯ yarn sequelize db:migrate:undo:all

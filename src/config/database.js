@@ -6,8 +6,8 @@ module.exports = {
   database: 'dbcard',
   define: {
     timestamps:true,
-    undercored:true,
-    undercoredAll: true,
+    underscored:true,
+    underscoredAll: true,
   },
 
 };
